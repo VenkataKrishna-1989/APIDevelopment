@@ -12,5 +12,10 @@ namespace NZWalksAPI.Controllers
         {
             return Ok(new { ProductId = 1,Name="TV",Category="Electronics" } );
         }
+        [HttpGet("FetchProductsById/{id}")]
+        public IActionResult FetchProducts(int id)
+        {
+            return Ok("New Product from id is:"+id);
+        }
     }
 }
