@@ -17,5 +17,11 @@ namespace NZWalksAPI.Controllers
         {
             return Ok("New Product from id is:"+id);
         }
+
+        [HttpGet("FetchOrdersById/{id}")]
+        public IActionResult FetchOrdersById(int id)
+        {
+            return Ok("New Order from id is:" + id);
+        }
     }
 }
